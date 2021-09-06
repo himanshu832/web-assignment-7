@@ -29,10 +29,10 @@ function getweather(input){
         txt=data.wind.speed;
         speed.innerHTML=txt+" kms";
         txt=parseInt(data.main.temp-273);
-        temp.innerHTML=txt+"Degree C";
+        temp.innerHTML=txt+"*C";
         txt=parseInt(data.main.temp_min-273);
         let txt2=parseInt(data.main.temp_max-273);
-        minmax.innerHTML=txt+"Degree C(min) / "+txt2+"Degree C(max)";
+        minmax.innerHTML=txt+"*C(min) / "+txt2+"*C(max)";
         txt=new Date(data.dt).toDateString();
         time.innerHTML=txt;
     })
